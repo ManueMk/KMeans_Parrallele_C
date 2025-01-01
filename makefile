@@ -1,9 +1,9 @@
-kmeans_par:kmeans_par.c
-	gcc -o kmeans_par kmeans_par.c -pthread -lm
+map_kmeans:map_kmeans.c
+	gcc -o map_kmeans map_kmeans.c -pthread -lm
 
-run:kmeans_par
-	./kmeans_par 20000 5 5 4 3
+run:map_kmeans
+	./map_kmeans 5000 10 6 4
 	
 
 clean:
-	rm kmeans_par
+	rm map_kmeans
